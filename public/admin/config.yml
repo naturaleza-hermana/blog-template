@@ -139,3 +139,6 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
+      - label: 'Cover Image'
+        name: 'image'
+        widget: 'image'
