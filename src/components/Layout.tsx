@@ -17,7 +17,7 @@ export default function Layout({ children }: Props) {
         <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,800|Montserrat:600|Alegreya+Sans:500&amp;display=swap" rel="stylesheet"/>
       </Head>
       
-      <main>{children}</main>
+      {children}
       
     </div>
   );

@@ -8,6 +8,8 @@ import config from "../../lib/config";
 import { countPosts, listPostContent, PostContent } from "../../lib/posts";
 import { listTags, TagContent } from "../../lib/tags";
 import Head from "next/head";
+import logo from "../../../public/images/logo.png"
+import Image from 'next/image'
 
 type Props = {
   posts: PostContent[];
@@ -25,7 +27,19 @@ export default function Index({ posts, tags, pagination }: Props) {
       <BasicMeta url={url} title={title} />
       <OpenGraphMeta url={url} title={title} />
       <TwitterCardMeta url={url} title={title} />
-      <PostList posts={posts} tags={tags} pagination={pagination} />
+      <div style={{background:'#787D12'}} >
+      <div className="container max-w-4xl mx-auto pt-16 md:pt-32 text-center break-normal pb-6">
+        <p className="text-white font-extrabold text-3xl md:text-5xl">
+          NATURALEZA HERMANA
+        </p>
+        <p className="text-xl md:text-2xl text-gray-500">¡Bienvenidos!</p>
+      </div>
+      </div>
+      <div style={{height:'75vh'}} className="bg-gray-200 w-full text-xl md:text-2xl text-gray-800 leading-normal rounded-t">
+        <PostList posts={posts} tags={tags} pagination={pagination} />
+      </div>
+     
+     
     </Layout>
   );
 }

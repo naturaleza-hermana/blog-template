@@ -41,6 +41,8 @@ export default function Post({
 }: Props) {
   const content = hydrate(source, { components })
   return (
+    <>
+    
     <PostLayout
       title={title}
       date={parseISO(dateString)}
@@ -51,6 +53,8 @@ export default function Post({
     >
       {content}
     </PostLayout>
+    </>
+    
   )
 }
 
