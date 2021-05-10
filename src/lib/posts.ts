@@ -9,6 +9,7 @@ export type PostContent = {
   readonly date: string;
   readonly title: string;
   readonly slug: string;
+  readonly image: string;
   readonly tags?: string[];
   readonly fullPath: string;
 };
@@ -39,6 +40,7 @@ export function fetchPostContent(): PostContent[] {
         title: string;
         tags: string[];
         slug: string;
+        image: string;
         fullPath: string,
       };
       matterData.fullPath = fullPath;
