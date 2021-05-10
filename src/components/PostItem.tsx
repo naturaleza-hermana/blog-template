@@ -17,7 +17,7 @@ export default function PostItem({ post }: Props) {
           <p className="w-full text-gray-600 text-xs md:text-sm px-6"> <Date date={parseISO(post.date)} /></p>
           <div className="w-full font-bold text-xl text-gray-900 px-6">{post.title}</div>
           <p className="text-gray-800 font-serif text-base px-6 mb-5">
-          {post.author}
+         
           </p>
         </a>
       </a>
