@@ -12,13 +12,13 @@ type Props = {
 export default function Pagination({ current, pages, link }: Props) {
   const pagination = generatePagination(current, pages);
   return (
-    <ul>
+    <ul className="relative z-0 inline-flex rounded-md shadow-sm -space-x-px">
       {pagination.map((it, i) => (
-        <li key={i}>
+        <li key={i} className="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700">
           {it.excerpt ? (
             "..."
           ) : (
-            <Link href={link.href(it.page)} as={link.as(it.page)}>
+            <Link href={link.href(it.page)} as={link.as(it.page) }>
               <a className={it.page === current ? "active" : null}>{it.page}</a>
             </Link>
           )}
