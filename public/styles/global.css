@@ -41,3 +41,60 @@ a:hover {
   top: 0;
   left: 0;
 }
+
+.header-nature {
+  background-color: #787D12;
+  color:#E4EE12;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 390px;
+  background-position: center center;
+}
+
+.subtitle {
+  padding-top: 15rem;
+  font-size: 3rem;
+  text-shadow: 1px 3px #000;
+}
+
+/* prettifying styles */
+* {
+  margin: 0;
+}
+
+ul {
+  padding: 0 !important;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+  grid-gap: 1.5rem;
+  margin-top: 2em;
+  text-transform: capitalize;
+}
+.grid img {
+  width: 100%;
+}
+.t-right {
+  text-align: right;
+}
+
+.post-item {
+  font-size: 1.2rem;
+  padding: 0 1em;
+}
+.post-item img{
+  max-width: 100%;
+  width: auto !important;
+  margin: 0 auto;
+}
+.title {
+  text-align: center;
+}
+.metadata {
+  position: relative;
+  overflow: auto;
+}

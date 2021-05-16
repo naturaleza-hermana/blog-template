@@ -25,19 +25,17 @@ export default function Index({ posts, tags, pagination }: Props) {
       <BasicMeta url={url} title={title} />
       <OpenGraphMeta url={url} title={title} />
       <TwitterCardMeta url={url} title={title} />
-      <div style={{background:'#787D12'}} >
-      <div className="container max-w-4xl mx-auto pt-16 md:pt-32 text-center break-normal pb-6">
-        <p className="text-white font-extrabold text-3xl md:text-5xl">
-          NATURALEZA HERMANA
-        </p>
-        <p className="text-xl md:text-2xl text-gray-500">¡Bienvenidos!</p>
+      <div className="header-nature" style={{backgroundImage: "url('/images/Portada.jpg')"}} >
+        <div className="container max-w-4xl mx-auto md:auto text-center break-normal pb-6">
+          <p className=" font-extrabold text-3xl md:text-5xl subtitle">
+            NATURALEZA HERMANA
+          </p>
+          
+        </div>
       </div>
-      </div>
-      <div style={{height:'75vh'}} className="bg-gray-200 w-full text-xl md:text-2xl text-gray-800 leading-normal rounded-t">
+      <div style={{height:'75vh'}} className="post__content">
         <PostList posts={posts} tags={tags} pagination={pagination} />
       </div>
-     
-     
     </Layout>
   );
 }

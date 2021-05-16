@@ -59,17 +59,17 @@ export default function PostLayout({
         author={authorName}
         description={description}
       />
-      <div className={"container"}>
+      <div className={"container mx-auto post-item"}>
         <article>
           <header>
-            <h1>{title}</h1>
+            <h1 className="title">{title}</h1>
             <div className={"metadata"}>
-              <div>
+              <span style={{float:'left'}}>
                 <Date date={date} />
-              </div>
-              <div>
+              </span>
+              <span style={{float:'right'}}>
                 <Author author={getAuthor(author)} />
-              </div>
+              </span>
             </div>
           </header>
           <div className={styles.content}>{children}</div>
@@ -82,57 +82,11 @@ export default function PostLayout({
           </ul>
         </article>
         <footer>
-          <div className={"social-list"}>
-            <SocialList />
-          </div>
+         
           <Copyright />
         </footer>
       </div>
-      <style jsx>
-        {`
-            .container {
-              display: block;
-              max-width: 36rem;
-              width: 100%;
-              margin: 0 auto;
-              padding: 0 1.5rem;
-              box-sizing: border-box;
-              z-index: 0;
-            }
-            .metadata div {
-              display: inline-block;
-              margin-right: 0.5rem;
-            }
-            article {
-              flex: 1 0 auto;
-            }
-            h1 {
-              margin: 0 0 0.5rem;
-              font-size: 2.25rem;
-            }
-            .tag-list {
-              list-style: none;
-              text-align: right;
-              margin: 1.75rem 0 0 0;
-              padding: 0;
-            }
-            .tag-list li {
-              display: inline-block;
-              margin-left: 0.5rem;
-            }
-            .social-list {
-              margin-top: 3rem;
-              text-align: center;
-            }
-
-            @media (min-width: 769px) {
-              .container {
-                display: flex;
-                flex-direction: column;
-              }
-            }
-          `}
-      </style>
+     
       <style global jsx>
         {`
             /* Syntax highlighting */

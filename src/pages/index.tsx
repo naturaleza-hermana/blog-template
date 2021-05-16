@@ -8,7 +8,7 @@ export default function Index() {
     <Layout>
       <BasicMeta url={"/"} />
       <OpenGraphMeta url={"/"} />
-      <main className="bg-white font-abhaya-libre relative" style={{height:'100hv'}}>
+      <main className="bg-white font-abhaya-libre relative" style={{height:'100vh'}}>
        <div className="container mx-auto px-6 sm:px-12 flex flex-col sm:flex-row items-center relative z-10"><div className="sm:w-1/2 xl:w-2/6 flex flex-col items-start py-24 sm:py-0">
       <h1 className="text-6xl xl:text-10xl font-abhaya-libre text-green-900 font-bold leading-none">Naturaleza Hermana</h1>
       <h2 className="text-xl xl:text-3xl font-abhaya-libre text-green-900 uppercase font-bold leading-none tracking-widest -mt-2 mb-6">ALIMENTACIÓN SALUDABLE Y ECOLOGÍA MUNDIAL</h2>

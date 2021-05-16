@@ -42,7 +42,14 @@ export default function Post({
   const content = hydrate(source, { components })
   return (
     <>
-    
+     <div className="header-nature" style={{backgroundImage: "url('/images/Portada.jpg')"}} >
+        <div className="container max-w-4xl mx-auto md:auto text-center break-normal pb-6">
+          <p className=" font-extrabold text-3xl md:text-5xl subtitle">
+            NATURALEZA HERMANA
+          </p>
+         
+        </div>
+      </div>
     <PostLayout
       title={title}
       date={parseISO(dateString)}
