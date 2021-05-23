@@ -14,7 +14,8 @@ export default function Layout({ children }: Props) {
         <link rel="apple-touch-icon" href="/icon.png" />
         <meta name="theme-color" content="#fff" />
         <link rel="stylesheet" href="https://tailwindcomponents.com/css/component.nature.css" />
-        <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,800|Montserrat:600|Alegreya+Sans:500&amp;display=swap" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300;900&display=swap" rel="stylesheet" /> 
       </Head>
       
       {children}
