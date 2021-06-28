@@ -9,3 +9,9 @@ tags:
     name: laboratorio
   - slug: covid
     name: covid
+  - slug: transgenicos
+    name: trangenicos
+  - slug: OVM
+    name: OVM
+  - slug: seguridad alimentaria
+    name: seguridad alimentaria
