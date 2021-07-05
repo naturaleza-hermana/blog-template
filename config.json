@@ -2,14 +2,7 @@
   "base_url": "https://naturalezahermana.com/",
   "site_title": "Naturaleza Hermana ",
   "site_description": "Naturaleza hermana",
-  "site_keywords": [
-    {
-      "keyword": "Next.js"
-    },
-    {
-      "keyword": "React"
-    }
-  ],
+  "site_keywords": [],
   "posts_per_page": 5,
   "twitter_account": "@naturaleza",
   "github_account": "naturaleza-hermana"
